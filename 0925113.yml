@@ -7,12 +7,14 @@ external-controller: 127.0.0.1:9090
 
 proxies:
   - {name: Albania 🇦🇱, server: al-tia.wbnet.cf, port: 31070, type: ss, cipher: aes-256-gcm, password: 3MZ6UwCpMYHKfjVZA8z5VBRa}
+  - {name: Vietnam 🇻🇳, server: vn-hcm.wbnet.cf, port: 31070, type: ss, cipher: aes-256-gcm, password: 3MZ6UwCpMYHKfjVZA8z5VBRa}
 
 proxy-groups:
   - name: 🔰 Select
     type: select
     proxies:
       - Albania 🇦🇱
+      - Vietnam 🇻🇳
 
 rules:
   - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
